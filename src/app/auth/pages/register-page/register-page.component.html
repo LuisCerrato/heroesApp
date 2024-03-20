@@ -1,1 +1,34 @@
-<p>register-page works!</p>
+
+
+
+<div class="flex flex-column">
+  <span class="txt-lg mb-4"> Register</span>
+  <mat-form-field>
+    <mat-label> User </mat-label>
+    <input type="text" matInput placeholder="User" />
+  </mat-form-field>
+
+
+  <mat-form-field>
+    <mat-label> Name </mat-label>
+    <input type="text" matInput placeholder="User" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label> Password </mat-label>
+    <input type="password" matInput placeholder="User Password" />
+  </mat-form-field>
+
+  <button mat-button mat-flat-button color="primary">
+    <mat-icon>
+      save
+    </mat-icon>
+    Create Account </button>
+
+
+    <div class="flex justify-content-end mt-5">
+      <a routerLink="/auth/login">I have an account</a>
+
+    </div>
+
+</div>
