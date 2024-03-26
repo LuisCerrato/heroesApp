@@ -1,14 +1,14 @@
-<div>
-  <ul>
-    <li *ngFor="let heroes of heroes">{{ heroes.superhero  }}</li>
-  </ul>
-</div>
+<h1>Listado de Heroes</h1>
+<mat-divider></mat-divider>
 
-<!-- <div class="wrapper">
-	<div class="card" style="width: auto;"   *ngFor="let item of heroes">
-		<img class="card-img-top" src="https://via.placeholder.com/350x150" alt="Card image cap">
-		<div class="card-body">
-			<h5 class="card-title"> {{ item.alter_ego}}</h5>
-		</div>
-	</div>
-</div> -->
+<div class="grid bm-8 pt-2">
+  <div
+    *ngFor="let hero of heroes"
+    class="col-2 sm:col md:col-3 xl:col-2"
+  >
+
+  <heroes-hero-card [hero]="hero"></heroes-hero-card>
+
+
+</div>
+</div>
