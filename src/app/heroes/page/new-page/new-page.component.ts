@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class NewPageComponent {
 
+  public publishers = [{
+    id: 'Dc   ', desc: 'DC-Comics'
+  }, {id: 'Marvel Comics', desc:'Marvel-Comics'}
+
+]
+
 }
