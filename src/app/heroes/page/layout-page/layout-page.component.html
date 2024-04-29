@@ -8,7 +8,6 @@
         <mat-icon>menu</mat-icon>
       </button>
     </mat-toolbar>
-
     <mat-nav-list>
       <mat-list-item
       *ngFor="let item of sidebarItems"
@@ -26,7 +25,8 @@
     </button>
 
     <span class="spacer"></span>
-    <button mat-button color="warn">Logout</button>
+    <span>{{user?.email}}</span>
+    <button mat-button color="warn" (click)="onLogout()">Logout</button>
   </mat-toolbar>
 
   <div class="container">
